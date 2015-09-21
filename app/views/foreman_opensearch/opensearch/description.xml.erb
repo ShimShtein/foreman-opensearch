@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+ <ShortName>Foreman</ShortName>
+ <Description>Search for foreman objects. Use "controller!search_term" form.</Description>
+ <Tags>foreman</Tags>
+ <Url type="text/html"
+      template="<%= url_for :controller => 'ForemanOpensearch/opensearch', :action => :search, :only_path => false %>?q={searchTerms}"/>
+</OpenSearchDescription>

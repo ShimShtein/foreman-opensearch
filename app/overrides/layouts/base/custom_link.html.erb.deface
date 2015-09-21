@@ -1,0 +1,4 @@
+<!-- insert_bottom 'head' -->
+<link rel="search" href="<%= url_for :controller => 'ForemanOpensearch/opensearch', :action => :description, :format => 'xml', :only_path => false %>" 
+      type="application/opensearchdescription+xml" 
+      title="foreman" />

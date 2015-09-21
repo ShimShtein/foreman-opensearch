@@ -1,62 +1,28 @@
-# ForemanPluginTemplate
+# ForemanOpensearch
 
-This repo is an example plugin which you can use as a starting point for developing
-your own Foreman plugins
+*Introdction here*
 
-## Getting Started
+This plugin adds [opensearch description document](http://www.opensearch.org/Specifications/OpenSearch/1.1#OpenSearch_description_document) declaration to foreman.
 
-First, clone this repo to a directory named for your new plugin
 
-    git clone https://github.com/theforeman/foreman_plugin_template foreman_my_plugin
+## Installation
 
-Now use the provided script to rewrite all the files in the plugin
+See [How_to_Install_a_Plugin](http://projects.theforeman.org/projects/foreman/wiki/How_to_Install_a_Plugin)
+for how to install Foreman plugins
 
-    cd foreman_my_plugin
-    ./rename.rb foreman_my_plugin
+## Usage
 
-The script will also output the required Bundler line to add the plugin to Foreman.
-Apply this change, and restart Foreman
+After opening any foreman page, it registers itself as a search provider automatically.
+In order to search for some object enter in Chrome's omnibox: *your_foreman_servername* and then tress *TAB*.
+The search string format is: *plural_object_name***:***your search query*
 
-Once working, update the README with appropriate information, and publish your plugin!
+## Contributing
 
-## Out of the box functionality
-
-This example plugin comes with:
-
-* A model and helper concern
-* An inherited controller
-* A route/view which displays the plugin name
-* A widget for the Dashboard
-* A plugin registration block adding permissions/roles/menu entry
-* A functioning example rake task
-* A functioning example test and factory
-* Functioning internationalization support
-
-These examples show how to add to Foreman in various ways.
-
-### i18n
-
-From your Foreman checkout, run `rake plugin:gettext[foreman_plugin_example]` to
-extract the latest strings, and then inside the plugin checkout run `make -C locale
-tx-update` to pull and merge in the latest translations.  Do this regularly and
-before each release.
-
-Have your .pot file published in Foreman's Transifex project by contacting the
-development team below.
-
-[Translating](http://projects.theforeman.org/projects/foreman/wiki/Translating#Translating-for-developers)
-has more information about writing code with i18n support.
-
-## Getting help
-
-The Foreman developers IRC channel and mailing list are the best places to get help:
-
-* Freenode: #theforeman-dev
-* Google Groups: foreman-dev@googlegroups.com
+Fork and send a Pull Request. Thanks!
 
 ## Copyright
 
-Copyright (c) 2014 Red Hat
+Copyright (c) 2015 Shimon Shtein
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

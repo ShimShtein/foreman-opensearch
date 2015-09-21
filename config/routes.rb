@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  match 'new_action', to: 'foreman_plugin_template/hosts#new_action'
+  scope module: 'ForemanOpensearch' do
+    get 'search', to: 'opensearch#search'
+    get 'opensearch/description', to: 'opensearch#description'
+  end
 end
