@@ -1,7 +1,5 @@
 # ForemanOpensearch
 
-*Introdction here*
-
 This plugin adds [opensearch description document](http://www.opensearch.org/Specifications/OpenSearch/1.1#OpenSearch_description_document) declaration to foreman.
 
 
@@ -16,9 +14,17 @@ After opening any foreman page, it registers itself as a search provider automat
 In order to search for some object enter in Chrome's omnibox: *your_foreman_servername* and then tress *TAB*.
 The search string format is: *plural_object_name***:***your search query*
 
+![Opensearch usage](readme_files/usage1.gif)
+
 ## Contributing
 
 Fork and send a Pull Request. Thanks!
+
+## TODO
+
+* Suggestions
+  1. Add suggestions for available object types: `hosts:`, `hostgroups:`, `users:` e.t.c.
+  2. Link suggestions to foreman's native serch box suggestions.
 
 ## Copyright
 
