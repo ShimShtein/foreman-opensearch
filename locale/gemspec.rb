@@ -1,2 +1,2 @@
 # Matches foreman_opensearch.gemspec
-_('TODO: Description of ForemanOpensearch.')
+_('It publishes XML file in opensearch format.')
