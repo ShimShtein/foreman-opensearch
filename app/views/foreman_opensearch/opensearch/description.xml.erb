@@ -5,5 +5,5 @@
  <Description>Search for foreman objects. Use "controller!search_term" form.</Description>
  <Tags>foreman</Tags>
  <Url type="text/html"
-      template="<%= url_for :controller => 'ForemanOpensearch/opensearch', :action => :search, :only_path => false %>?q={searchTerms}"/>
+      template="<%= foreman_opensearch_search_url %>?q={searchTerms}"/>
 </OpenSearchDescription>

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  scope module: 'ForemanOpensearch' do
-    get 'search', to: 'opensearch#search'
-    get 'opensearch/description', to: 'opensearch#description'
+  namespace :foreman_opensearch do
+    get 'search', controller: 'opensearch', action: :search
+    get 'description', to: 'opensearch#description'
   end
 end

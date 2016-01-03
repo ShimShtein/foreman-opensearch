@@ -11,7 +11,8 @@ module ForemanOpensearch
 
     # Add any db migrations
     initializer 'foreman_opensearch.load_app_instance_data' do |app|
-      app.config.paths['db/migrate'] += ForemanOpensearch::Engine.paths['db/migrate'].existent
+      # No migrations needed
+      # app.config.paths['db/migrate'] += ForemanOpensearch::Engine.paths['db/migrate'].existent
     end
 
     initializer 'foreman_opensearch.register_plugin', after: :finisher_hook do |_app|
