@@ -7,5 +7,10 @@ module ForemanOpensearch
 
     def description
     end
+
+    def autocomplete
+      items = [params[:q], ['hosts:', 'users:']]
+      render :json => items
+    end
   end
 end

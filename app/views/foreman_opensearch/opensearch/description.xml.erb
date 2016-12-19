@@ -6,4 +6,9 @@
  <Tags>foreman</Tags>
  <Url type="text/html"
       template="<%= foreman_opensearch_search_url %>?q={searchTerms}"/>
+  <Url type="application/x-suggestions+json" 
+       method="GET" 
+       template="<%= foreman_opensearch_autocomplete_url %>">
+    <Param name="q" value="{searchTerms}"/>
+  </Url>
 </OpenSearchDescription>
